@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url(../fonts/BaiJamjuree-Regular.ttf) format("truetype"); }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 80px;
+  max-width: 1440px; }
+
+.page-body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #f2f1ef;
+  font-family: "Bai Jamjuree", sans-serif;
+  color: #161513; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #161513; }
+
+a,
+button {
+  cursor: pointer; }
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+label {
+  cursor: pointer; }
+
+input:focus {
+  outline: none; }
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+.page-header__list {
+  display: flex;
+  flex-wrap: wrap; }
+  .page-header__list .page-header__item:not(:last-child) {
+    padding-right: 32px; }
+  .page-header__list .page-header__item a {
+    border-bottom: 1px solid #161513; }
+
+.page-header__link {
+  border: 1px solid #161513;
+  padding: 9px 26px; }
+
+.hero-block .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px; }
+
+.hero-block .hero-block__wrapper {
+  padding-top: 144px; }
+
+.hero-block__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.56px;
+  padding-bottom: 32px;
+  max-width: 600px; }
+
+.hero-block__list {
+  display: flex;
+  padding-bottom: 40px; }
+  .hero-block__list .hero-block__item:not(:last-child) {
+    padding-right: 32px;
+    position: relative; }
+    .hero-block__list .hero-block__item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/star.svg);
+      right: 5px; }
+
+.hero-block__inner-wrapper {
+  display: flex; }
+
+.hero-block__link {
+  padding: 13px 33px;
+  border: 1px solid #161513; }
+  .hero-block__link:first-child {
+    color: #ffffff;
+    background-color: #161513; }
+
+.crawl-line__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161513;
+  height: 64px;
+  margin-bottom: 125px; }
+  .crawl-line__list .crawl-line__item {
+    position: relative;
+    color: #ffffff; }
+  .crawl-line__list .crawl-line__item::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/star.svg);
+    right: -35px; }
+
+.about-me .container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px; }
+
+.about-me__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 32px;
+  letter-spacing: 0.48px;
+  padding-bottom: 21px; }
+
+.about-me__main-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.56px;
+  max-width: 351px; }
+
+.about-me__wrapper-subtitle {
+  max-width: 612px; }
+
+.about-me__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+  padding-bottom: 36px; }
+
+.about-me_-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 27px; }
+
+.about-me__list {
+  display: flex;
+  justify-content: space-between; }
+
+.about-me__item-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e94d35;
+  padding-bottom: 10px; }
+
+.about-me__item-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 32px;
+  letter-spacing: 0.48px; }
+
+.experience .container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px; }
+
+.experience__list {
+  display: flex; }
+  .experience__list .experience__item {
+    padding: 22px 72px;
+    text-align: center;
+    border: 1px solid #161513; }
+    .experience__list .experience__item .experience__item-number {
+      padding-bottom: 11px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 64px; }
+    .experience__list .experience__item .experience__item-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 1.28px;
+      text-transform: uppercase; }
+    .experience__list .experience__item:nth-child(2) {
+      color: #ffffff;
+      background-color: #161513; }
