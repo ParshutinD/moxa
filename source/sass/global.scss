@@ -75,3 +75,19 @@ input {
     outline: none;
   }
 }
+
+
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: inherit;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $color_red;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: inherit;
+}
