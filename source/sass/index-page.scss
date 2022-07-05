@@ -95,18 +95,24 @@
   height: 64px;
   margin-bottom: 125px;
 
+  transform: rotate(-5deg);
+
   & .crawl-line__item {
     position: relative;
     color: $color_white;
-  }
 
-  & .crawl-line__item::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/star.svg);
-    right: -35px;
+    & span {
+      padding-right: 200px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/star.svg);
+      }
+    }
   }
 }
 

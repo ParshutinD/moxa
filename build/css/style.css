@@ -143,17 +143,20 @@ html::-webkit-scrollbar-track {
   align-items: center;
   background-color: #161513;
   height: 64px;
-  margin-bottom: 125px; }
+  margin-bottom: 125px;
+  transform: rotate(-5deg); }
   .crawl-line__list .crawl-line__item {
     position: relative;
     color: #ffffff; }
-  .crawl-line__list .crawl-line__item::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/star.svg);
-    right: -35px; }
+    .crawl-line__list .crawl-line__item span {
+      padding-right: 200px;
+      position: relative; }
+      .crawl-line__list .crawl-line__item span::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/star.svg); }
 
 .about-me .container {
   display: flex;
